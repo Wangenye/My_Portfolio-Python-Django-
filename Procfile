@@ -1,1 +1,1 @@
-web: gunicorn wnagenye-portfolio.wsgi 
+web: gunicorn Portfolio_Project.wsgi 
