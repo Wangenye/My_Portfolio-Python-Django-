@@ -1,1 +1,1 @@
-web: gunicorn wnagenye-portfolio.wsgi --log-file -
+web: gunicorn wnagenye-portfolio.wsgi 
