@@ -1,0 +1,94 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.10.2-web/css/fontawesome.min.css">
+</head>
+
+<!-- <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/contactform.css' %}">
+<script src="contactform.js"></script>
+
+<body>
+
+
+
+    <div class="btns">
+        <ul>
+            <li>
+                <!-- <button class="" id="hide">Show About</button>
+				 -->
+                <img id="hide" src="{% static './icons/icons8-about-512.png' %}" alt="">
+
+            </li>
+            <li>
+                <img id="show" src="{% static './icons/icons8-envelope-96.png' %}" alt="">
+                <!-- <button id="show"> Show contact</button></li> -->
+        </ul>
+
+
+
+    </div>
+
+    <div id="showcontact" class="contact ">
+        <div>
+            <a href="" class="close">x</a>
+        </div>
+        <h2>Contact Me</h2>
+        <!-- <div class="jumbotron"> -->
+        <form class="" method="" action="">
+            <p><label for="firstname"> Full Name</label>
+                <input class="" type="text" name="" placeholder="Enter Full Name ..."></p>
+            <!-- <label> lastname:</label>
+
+			<input type="text" name=""> -->
+            <p><label for="email"> Email</label>
+                <input class="" type="text" name="" placeholder="Email"></p>
+
+            <p><label for="message"> Message:</label><br>
+                <!-- <input class="form-control" type="text" name=""> -->
+                <textarea class="" placeholder="Please type your message here..."></textarea></p>
+
+            <p><button class="btn btn-default" type="submit"> Submit</button></p>
+
+        </form>
+    </div>
+    <!-- </div> -->
+
+    <div id="showabout" class="About">
+        <a href="" class="close">x</a>
+        <h2>About Me</h2>
+        {% for detail in abouT %}
+        <p>
+            {{ detail.about }}
+        </p>
+        {% endfor %}
+    </div>
+
+
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script>
+        $('#show').click(function () {
+            $('#showcontact').show();
+            $('#showabout').hide();
+
+        });
+        $('#hide').click(function () {
+            $('#showabout').show();
+            $('#showcontact').hide();
+        });
+        $('#hideno').hover(function () {
+            //$('#showno').show();
+            $('#number').show();
+            $('body').hover(function () {
+                $('#number').hide();
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

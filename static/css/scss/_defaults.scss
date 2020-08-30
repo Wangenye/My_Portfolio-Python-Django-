@@ -1,0 +1,51 @@
+$position1: relative;
+$position2: absolute;
+$defaultColor: #ebebec;
+$otherColor: #ffc25c;
+$hoverTextColor: #3b3e4d;
+$defaultFont: "ArimaMadurai-Black";
+
+@mixin backgroundCenter {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin BoxShadow {
+  box-shadow: 0px 0px 0px 0px #323541, 0px 0px 0px 0px #323541,
+    0px 0px 0px 0px #444749, 0px 0px 0px 0px #444759, -7px -7px 20px 0px #323541,
+    -4px -4px 5px 0px #323541, 7px 7px 20px 0px #444749, 4px 4px 5px 0px #444759;
+}
+
+@mixin BoxShadowInset {
+  box-shadow: 0px 0px 0px 0px #323541, 0px 0px 0px 0px #323541,
+    0px 0px 0px 0px #444749, 0px 0px 0px 0px #444759,
+    inset -7px -7px 20px 0px #323541, inset -4px -4px 5px 0px #323541,
+    inset 7px 7px 20px 0px #444749, inset 4px 4px 5px 0px #444759;
+}
+
+@mixin CenterHorizontal {
+  left: 50%;
+  right: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+@mixin CenterContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@mixin Zero {
+  top: 0;
+  padding: 0;
+  margin: 0;
+  left: 0;
+}
+
+@mixin CenterVertical {
+  left: 50%;
+  right: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}

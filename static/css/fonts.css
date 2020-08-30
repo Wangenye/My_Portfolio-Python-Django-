@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("./Pacifico/Pacifico-Regular.ttf");
+}
+@font-face {
+  font-family: Fruktur;
+  src: url("./Fruktur/Fruktur-Regular.ttf");
+}
+
+@font-face {
+  font-family: Akronim;
+  src: url("./Fruktur/Akronim-Regular.ttf");
+}
+/*Amarante-Regular.ttf*/
+@font-face {
+  font-family: Amarante;
+  src: url("./Fruktur/Amarante-Regular.ttf");
+}
+
+/*Aladin-Regular.ttf*/
+@font-face {
+  font-family: Amarante;
+  src: url("./Fruktur/Aladin-Regular.ttf");
+}
+/*UnifrakturCook-Bold.ttf*/
+@font-face {
+  font-family: UnifrakturCook;
+  src: url("./Fruktur/UnifrakturCook-Bold.ttf");
+}
+/*Charm-Bold.ttf*/
+@font-face {
+  font-family: Charm-Bold;
+  src: url("./Fruktur/Charm-Bold.ttf");
+}
+
+/*ArimaMadurai-Black.ttf*/
+@font-face {
+  font-family: ArimaMadurai-Black;
+  src: url("./Fruktur/ArimaMadurai-Black.ttf");
+}
+
+@font-face {
+  font-family: Atma-Bold;
+  src: url("./Fruktur/Atma-Bold.ttf");
+}
