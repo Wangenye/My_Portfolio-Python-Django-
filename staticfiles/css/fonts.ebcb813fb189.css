@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("./Pacifico/Pacifico-Regular.9b94499ccea3.ttf");
+}
+@font-face {
+  font-family: Fruktur;
+  src: url("./Fruktur/Fruktur-Regular.dbc9f8e0bb39.ttf");
+}
+
+@font-face {
+  font-family: Akronim;
+  src: url("./Fruktur/Akronim-Regular.62412a029bd0.ttf");
+}
+/*Amarante-Regular.ttf*/
+@font-face {
+  font-family: Amarante;
+  src: url("./Fruktur/Amarante-Regular.7c788b44d11f.ttf");
+}
+
+/*Aladin-Regular.ttf*/
+@font-face {
+  font-family: Amarante;
+  src: url("./Fruktur/Aladin-Regular.7bfe903a0f82.ttf");
+}
+/*UnifrakturCook-Bold.ttf*/
+@font-face {
+  font-family: UnifrakturCook;
+  src: url("./Fruktur/UnifrakturCook-Bold.f1f39b8b4662.ttf");
+}
+/*Charm-Bold.ttf*/
+@font-face {
+  font-family: Charm-Bold;
+  src: url("./Fruktur/Charm-Bold.71c8ee40711a.ttf");
+}
+
+/*ArimaMadurai-Black.ttf*/
+@font-face {
+  font-family: ArimaMadurai-Black;
+  src: url("./Fruktur/ArimaMadurai-Black.a915b229f251.ttf");
+}
+
+@font-face {
+  font-family: Atma-Bold;
+  src: url("./Fruktur/Atma-Bold.709cd878dc14.ttf");
+}
