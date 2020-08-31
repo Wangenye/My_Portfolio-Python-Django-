@@ -271,6 +271,7 @@
   }
 }
 #middleLevel {
+  display: none;
   top: -10px;
   position: absolute;
   background: #252734;
