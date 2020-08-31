@@ -61,7 +61,7 @@
                     <li><a href="">Home</a></li>
                     <li><a href="{% url 'About' %}">About</a></li>
                     <li><a href="">Services</a></li>
-                    <li><a href="">About</a></li>
+                    <!-- <li><a href="">About</a></li> -->
                     <li><a href="{% url 'About' %}">Contact</a></li>
                 </ol>
             </div>
@@ -82,7 +82,7 @@
 
 
                             <div>
-                                <a href="">Read more</a>
+                                <a href="{% url 'About' %}"">Read more</a>
                             </div>
                             </p>
 
@@ -99,27 +99,30 @@
     </section>
 
 
-    <section id="middleLevel">
-        <div class="Projects">
-            <h1>Projects</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A quisquam exercitationem culpa error
-                voluptatum, harum
-                architecto dicta voluptate. Est alias explicabo, dolorem quae sapiente qui nobis adipisci incidunt
-                aspernatur
-                quos.
-            </p>
-        </div>
-        <div class="cards container">
-            {% for project in projects %}
-            <div class="pcard">
-                <img src="{{ project.project_image.url }}" alt="">
-                <div class="caption">
-                    <h3>{{ project.name }}!</h3>
-                    <a href=""><img src="{% static './images/github/github-original.svg' %}" alt=""></a>
-                </div>
-            </div>
-            <!-- <div class="pcard">
+    <section id=" middleLevel">
+                                    <div class="Projects">
+                                        <h1>Projects</h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quisquam
+                                            exercitationem culpa error
+                                            voluptatum, harum
+                                            architecto dicta voluptate. Est alias explicabo, dolorem quae sapiente qui
+                                            nobis adipisci incidunt
+                                            aspernatur
+                                            quos.
+                                        </p>
+                                    </div>
+                                    <div class="cards container">
+                                        {% for project in projects %}
+                                        <div class="pcard">
+                                            <img src="{{ project.project_image.url }}" alt="">
+                                            <div class="caption">
+                                                <h3>{{ project.name }}!</h3>
+                                                <a href=""><img src="{% static './images/github/github-original.svg' %}"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="pcard">
                 <img src="{% static './images/programming-1873854.png' %}" alt="">
                 <div class="caption">
                     <h3>amazing caption!</h3>
@@ -133,15 +136,15 @@
                     <a href=""><img src="{% static './images/github/github-original.svg' %}" alt=""></a>
                 </div>
             </div> -->
-            {% endfor %}
-            <!-- <div class="pcard">
+                                        {% endfor %}
+                                        <!-- <div class="pcard">
         <img src="./images/programming-1873854.png" alt="">
         <div class="caption">
           <h3>amazing caption!</h3>
           <a href=""><img src="./images/github/github-original.svg" alt=""></a>
         </div>
       </div> -->
-            <!-- <div class="pcard">
+                                        <!-- <div class="pcard">
         <img src="./images/programming-1873854.png" alt="">
         <div class="caption">
           <h3>amazing caption!</h3>
@@ -156,7 +159,7 @@
         </div>
       </div> -->
 
-        </div>
+                                    </div>
     </section>
 
     <div class="ff"></div>
