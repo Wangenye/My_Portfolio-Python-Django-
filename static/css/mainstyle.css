@@ -271,10 +271,9 @@
   }
 }
 #middleLevel {
-  top: 0px;
-  margin: 0;
-  padding: 0;
-  position: relative;
+  display: none;
+  top: -10px;
+  position: absolute;
   background: #252734;
   width: 100%;
 }
@@ -539,15 +538,12 @@ body {
     margin-left: 3%;
   }
 
-  *,
-html {
+  html {
     scroll-behavior: smooth;
-    margin: 0px;
-    padding: 0;
-    top: 0;
   }
 
-  body {
+  *,
+body {
     margin: 0;
     padding: 0;
     top: 0;
@@ -612,6 +608,10 @@ html {
 
   #topLevel {
     position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    left: 0;
     margin: 0;
     padding: 0;
     top: 0;
