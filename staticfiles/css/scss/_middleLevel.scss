@@ -1,11 +1,10 @@
 @import "./defaults";
 
 #middleLevel {
-  display: none;
   top: -10px;
   // margin: 0;
   // padding: 0;
-  position: $position2;
+  position: $position1;
   background: #252734;
   // height: 100vh;
   // margin-bottom: 30px;
@@ -51,7 +50,6 @@
     position: $position1;
     padding: 0;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
     // grid-template-rows: repeat(4, 1fr);
     padding-bottom: 100px;
 
@@ -161,7 +159,6 @@
 
       h1 {
         font-size: 5rem;
-        text-shadow: #48cfad 1px 2px 5px;
       }
     }
 
