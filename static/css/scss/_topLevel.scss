@@ -88,21 +88,19 @@
       }
     }
     .image-me {
+      // display: none;
       position: $position2;
       top: -200px;
-      left: 200px;
+      left: 150px;
       //   right: 0;
       //   z-index: -1;
-      @include BoxShadowInset;
+      background: transparent;
+      background: none;
+      // @include BoxShadowInset;
       transition: all 3s linear;
       transition-delay: 2s;
       border-radius: 50%;
 
-      &:hover {
-        @include BoxShadow;
-        // transform: translateX(30px) translateZ(150px);
-        // border-radius: 50%;
-      }
       img {
         z-index: -1;
         width: 320px;

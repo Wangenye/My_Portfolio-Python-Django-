@@ -1,7 +1,6 @@
 #middleLevel {
-  display: none;
   top: -10px;
-  position: absolute;
+  position: relative;
   background: #252734;
   width: 100%;
 }
@@ -50,7 +49,6 @@
   position: relative;
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
   padding-bottom: 100px;
 }
 #middleLevel .cards .pcard {
@@ -156,7 +154,6 @@ body {
   }
   #middleLevel .Projects h1 {
     font-size: 5rem;
-    text-shadow: #48cfad 1px 2px 5px;
   }
   #middleLevel .cards {
     width: 100%;
