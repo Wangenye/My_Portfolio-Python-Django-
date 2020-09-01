@@ -48,17 +48,17 @@
   float: left;
 }
 .leftSide .name-intro .social-list {
-  margin-top: 10px;
-  margin-bottom: 250px;
-  top: -55px;
+  top: -50px;
   position: relative;
   clear: both;
   float: none;
-  margin-left: -80px;
+  margin-left: -130px;
 }
 .leftSide .name-intro .social-list ul {
   position: relative;
   display: inline;
+  margin: 30px;
+  top: -29px;
 }
 .leftSide .name-intro .social-list ul li {
   border-top-left-radius: 70%;
@@ -268,7 +268,7 @@
   }
 }
 .Center {
-  top: -10px;
+  top: 0px;
   position: relative;
   background: #252734;
   width: 100%;
@@ -772,7 +772,6 @@ body {
   }
   #topLevel .rightSide .menu {
     position: absolute;
-    margin-top: -300px;
     background: #3b3e4d;
     left: 0;
     width: 100%;

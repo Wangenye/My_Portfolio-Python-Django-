@@ -56,19 +56,22 @@
     }
     .social-list {
       //   @include Zero;
-      margin-top: 10px;
-      margin-bottom: 250px;
-      top: -55px;
+      // margin-top: 10px;
+      // margin-bottom: 250px;
+      top: -50px;
       position: $position1;
       clear: both;
       float: none;
       //   left: 2%;
-      margin-left: -80px;
-      //   padding: 20px;
+      margin-left: -130px;
+      // margin-top: 20px;
       ul {
         position: $position1;
         display: inline;
         // padding: 20px;
+        margin: 30px;
+        // margin-bottom: 50px;
+        top: -29px;
         li {
           border-top-left-radius: 70%;
           border-radius: 50%;

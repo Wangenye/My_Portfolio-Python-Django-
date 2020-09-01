@@ -1,7 +1,7 @@
 @import "./defaults";
 
 .Center {
-  top: -10px;
+  top: 0px;
   // margin: 0;
   // padding: 0;
   position: $position1;
@@ -210,14 +210,6 @@
   html {
     scroll-behavior: smooth;
   }
-  // *,
-  // body {
-  //   margin: 0;
-  //   padding: 0;
-  //   top: 0;
-  //   height: 100%;
-  //   width: 100%;
-  // }
 
   .Center {
     position: $position1;
