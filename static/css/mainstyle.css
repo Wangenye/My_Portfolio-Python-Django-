@@ -51,7 +51,8 @@
 }
 .leftSide .name-intro .social-list {
   margin-top: 10px;
-  top: -45px;
+  margin-bottom: 250px;
+  top: -55px;
   position: relative;
   clear: both;
   float: none;
