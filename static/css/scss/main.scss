@@ -5,6 +5,11 @@
 
 body {
   background: #ced5e7;
+  margin: 0;
+  top: 0;
+  padding: 0;
+  right: 0;
+  left: 0;
   // height: 100%;
   // width: 100%;
 }
@@ -47,15 +52,17 @@ body {
     scroll-behavior: smooth;
   }
 
-  *,
-  body {
-    margin: 0;
-    padding: 0;
-    top: 0;
-  }
+  // body {
+  //   margin: 0;
+  //   top: 0;
+  //   padding: 0;
+  //   height: 100%;
+  //   width: 100%;
+  // }
   .Menu-bar {
+    margin: 10px;
     z-index: 1;
-    top: 0px;
+    top: 5px;
     // display: block;
     opacity: 1;
     position: $position2;
@@ -67,6 +74,7 @@ body {
     border-radius: 10px;
     @include BoxShadow;
     -webkit-transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+    border-bottom-left-radius: 2px;
 
     span {
       position: relative;
@@ -128,7 +136,7 @@ body {
     @include Zero;
     margin: 0;
     padding: 0;
-    height: 100%;
+    // height: 100%;
     top: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -139,15 +147,18 @@ body {
     margin-bottom: -640px;
     .leftSide {
       position: $position1;
-      // @include Zero;
-      width: 100vw;
-      height: auto;
-      margin-bottom: 0;
+      @include Zero;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      // width: 100vw;
+      // height: auto;
+      // margin-bottom: 0;
       // margin-bottom: -50px;
       .logo {
         position: $position1;
         display: flex;
-        top: -30px;
+        top: 0px;
         margin: 0;
         padding: 20px;
         left: 0;
@@ -170,7 +181,7 @@ body {
           display: grid;
           // @include CenterHorizontal;
           padding: 0px 10px 0px 50px;
-          top: 350px;
+          top: 390px;
           left: 5px;
           h1 {
             position: relative;
@@ -234,7 +245,7 @@ body {
           // margin-top: -4000px;
           // display: flex;
           top: -450px;
-          left: 0;
+          left: 00;
           width: 90%;
           border-radius: 50%;
           @include BoxShadowInset;
@@ -256,17 +267,19 @@ body {
 
     ///RightSide
     .rightSide {
-      // top: -280px;
+      top: -260px;
       margin-bottom: 10px;
 
       .menu {
         position: $position2;
-        // top: -600px;
+        // top: -400px;
+        margin-top: -300px;
         // opacity: 0;
         background: $hoverTextColor;
         left: 0;
-        // width: 100%;
-        // height: 1000px;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
         border-right: 4px black solid;
 
         transition: all 2s;
@@ -315,8 +328,12 @@ body {
 
       ///@extend.
       .intro {
+        // display: none;
+        width: 100%;
+
+        left: 0;
         position: relative;
-        top: -330px;
+        top: -100px;
         .title {
           @include CenterHorizontal;
           justify-content: center;

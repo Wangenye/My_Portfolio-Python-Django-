@@ -210,12 +210,14 @@
   html {
     scroll-behavior: smooth;
   }
-  *,
-  body {
-    margin: 0;
-    padding: 0;
-    top: 0;
-  }
+  // *,
+  // body {
+  //   margin: 0;
+  //   padding: 0;
+  //   top: 0;
+  //   height: 100%;
+  //   width: 100%;
+  // }
 
   .Center {
     position: $position1;

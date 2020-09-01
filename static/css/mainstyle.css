@@ -1,9 +1,7 @@
 .leftSide {
   position: relative;
   top: 0;
-  left: 0;
   margin: 0;
-  padding: 0;
 }
 .leftSide .logo {
   position: relative;
@@ -465,13 +463,6 @@ body {
     scroll-behavior: smooth;
   }
 
-  *,
-body {
-    margin: 0;
-    padding: 0;
-    top: 0;
-  }
-
   .Center {
     position: relative;
   }
@@ -515,7 +506,6 @@ body {
 #Footer {
   position: relative;
   bottom: 0;
-  margin: -10px;
 }
 
 @media screen and (max-width: 780px) {
@@ -532,26 +522,26 @@ body {
     scroll-behavior: smooth;
   }
 
-  *,
-body {
-    margin: 0;
-    padding: 0;
-    top: 0;
-  }
-
   .ff {
     position: relative;
   }
 
   #Footer {
+    display: none;
     background: yellow;
     position: relative;
     text-align: center;
     bottom: 0;
+    width: 100%;
   }
 }
 body {
   background: #ced5e7;
+  margin: 0;
+  top: 0;
+  padding: 0;
+  right: 0;
+  left: 0;
 }
 
 .Menu-bar {
@@ -592,16 +582,10 @@ body {
     scroll-behavior: smooth;
   }
 
-  *,
-body {
-    margin: 0;
-    padding: 0;
-    top: 0;
-  }
-
   .Menu-bar {
+    margin: 10px;
     z-index: 1;
-    top: 0px;
+    top: 5px;
     opacity: 1;
     position: absolute;
     padding: 5px;
@@ -611,6 +595,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 0px 0px #323541, 0px 0px 0px 0px #323541, 0px 0px 0px 0px #444749, 0px 0px 0px 0px #444759, -7px -7px 20px 0px #323541, -4px -4px 5px 0px #323541, 7px 7px 20px 0px #444749, 4px 4px 5px 0px #444759;
     -webkit-transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+    border-bottom-left-radius: 2px;
   }
   .Menu-bar span {
     position: relative;
@@ -664,7 +649,6 @@ body {
     left: 0;
     margin: 0;
     padding: 0;
-    height: 100%;
     top: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -676,14 +660,18 @@ body {
   }
   #topLevel .leftSide {
     position: relative;
-    width: 100vw;
-    height: auto;
-    margin-bottom: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
   }
   #topLevel .leftSide .logo {
     position: relative;
     display: flex;
-    top: -30px;
+    top: 0px;
     margin: 0;
     padding: 20px;
     left: 0;
@@ -705,7 +693,7 @@ body {
     width: auto;
     display: grid;
     padding: 0px 10px 0px 50px;
-    top: 350px;
+    top: 390px;
     left: 5px;
   }
   #topLevel .leftSide .name-intro .name h1 {
@@ -779,12 +767,17 @@ body {
     transform: translateX(-50%);
   }
   #topLevel .rightSide {
+    top: -260px;
     margin-bottom: 10px;
   }
   #topLevel .rightSide .menu {
     position: absolute;
+    margin-top: -300px;
     background: #3b3e4d;
     left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
     border-right: 4px black solid;
     transition: all 2s;
     transform: translateY(-2000px);
@@ -837,8 +830,10 @@ body {
     font-size: 1.2rem;
   }
   #topLevel .rightSide .intro {
+    width: 100%;
+    left: 0;
     position: relative;
-    top: -330px;
+    top: -100px;
   }
   #topLevel .rightSide .intro .title {
     left: 50%;
