@@ -128,6 +128,7 @@ body {
     @include Zero;
     margin: 0;
     padding: 0;
+    height: 100%;
     top: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -135,7 +136,7 @@ body {
     font-size: 1.2rem;
     background-image: none;
     background: $hoverTextColor;
-    margin-bottom: -140px;
+    margin-bottom: -640px;
     .leftSide {
       position: $position1;
       // @include Zero;
@@ -187,11 +188,16 @@ body {
         }
         .social-list {
           // margin-top: 10px;
-          top: 740px;
+          top: 770px;
           position: $position1;
-          left: 0;
-          margin-left: 0px;
+          // left: 50%;
+          width: 100%;
+          // right: 50%;
+          // transform: translateX(50%);
+          margin-left: -10px;
           padding: 20px;
+          // padding-bottom: 10px;
+          // margin-bottom: 100px;
 
           ul {
             position: $position1;
@@ -204,6 +210,7 @@ body {
             width: 50px;
             height: 50px;
             border-radius: 50%;
+            margin-bottom: 30px;
             li {
               border-radius: 50%;
               position: relative;
@@ -226,7 +233,7 @@ body {
           position: $position1;
           // margin-top: -4000px;
           // display: flex;
-          top: -200px;
+          top: -450px;
           left: 0;
           width: 90%;
           border-radius: 50%;
@@ -250,6 +257,8 @@ body {
     ///RightSide
     .rightSide {
       // top: -280px;
+      margin-bottom: 10px;
+
       .menu {
         position: $position2;
         // top: -600px;
@@ -307,7 +316,7 @@ body {
       ///@extend.
       .intro {
         position: relative;
-        top: -100px;
+        top: -330px;
         .title {
           @include CenterHorizontal;
           justify-content: center;

@@ -7,7 +7,7 @@
 }
 .leftSide .logo {
   position: relative;
-  top: -30px;
+  top: -60px;
   padding: 20px;
   left: 5%;
   color: #ffc25c;
@@ -664,6 +664,7 @@ body {
     left: 0;
     margin: 0;
     padding: 0;
+    height: 100%;
     top: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -671,7 +672,7 @@ body {
     font-size: 1.2rem;
     background-image: none;
     background: #3b3e4d;
-    margin-bottom: -140px;
+    margin-bottom: -640px;
   }
   #topLevel .leftSide {
     position: relative;
@@ -720,10 +721,10 @@ body {
     float: none;
   }
   #topLevel .leftSide .name-intro .social-list {
-    top: 740px;
+    top: 770px;
     position: relative;
-    left: 0;
-    margin-left: 0px;
+    width: 100%;
+    margin-left: -10px;
     padding: 20px;
   }
   #topLevel .leftSide .name-intro .social-list ul {
@@ -736,6 +737,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-bottom: 30px;
   }
   #topLevel .leftSide .name-intro .social-list ul li {
     border-radius: 50%;
@@ -751,7 +753,7 @@ body {
   }
   #topLevel .leftSide .name-intro .image-me {
     position: relative;
-    top: -200px;
+    top: -450px;
     left: 0;
     width: 90%;
     border-radius: 50%;
@@ -775,6 +777,9 @@ body {
     right: 50%;
     display: flex;
     transform: translateX(-50%);
+  }
+  #topLevel .rightSide {
+    margin-bottom: 10px;
   }
   #topLevel .rightSide .menu {
     position: absolute;
@@ -833,7 +838,7 @@ body {
   }
   #topLevel .rightSide .intro {
     position: relative;
-    top: -100px;
+    top: -330px;
   }
   #topLevel .rightSide .intro .title {
     left: 50%;
