@@ -1,7 +1,7 @@
 @import "./defaults";
 
 .Center {
-  top: 0px;
+  top: 30px;
   // margin: 0;
   // padding: 0;
   position: $position1;
@@ -151,8 +151,9 @@
     top: 0;
   }
 
-  #middleLevel {
+  .Center {
     position: $position1;
+    // display: none;
 
     .Projects {
       position: relative;
