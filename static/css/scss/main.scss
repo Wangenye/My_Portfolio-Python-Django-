@@ -259,7 +259,8 @@ body {
         width: 100%;
         background: transparent;
         height: 1000px;
-        backdrop-filter: blur(5px);
+        backdrop-filter: grayscale(0.5) opacity(0.8) blur(400px);
+        // filter: ;
         transition: all 2s;
         transform: translateY(-2000px);
         &.active {
