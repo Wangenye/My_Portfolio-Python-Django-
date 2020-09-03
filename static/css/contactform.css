@@ -44,37 +44,25 @@ body {
   justify-content: center;
   align-content: center;
 }
-.socialIcons ul {
+.social-list ul {
   position: relative;
-  width: 70px;
-  /* background-color: #333333; */
-  top: 100px;
-  left: -2%;
-  border: 2px #fff solid;
-  border-left: none;
-  border-bottom-right-radius: 70px;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 2px;
-  border-color: aqua;
-  background-color: aliceblue;
-  /* animation-name: dudu; */
-  /* transform: rotate(10deg); */
+  display: inline;
 }
-
-.socialIcons ul li {
+.social-list ul li {
+  border-radius: 50%;
+  display: inline;
   list-style-type: none;
-  display: block;
-  position: relative;
+  padding: 0px 10px;
 }
-.socialIcons img {
-  height: 50px;
-  width: 50px;
-  position: relative;
-
-  left: -2%;
+.social-list ul li a {
+  text-decoration: none;
+}
+.social-list ul li a img {
   padding: 10px;
-  transition: transform 2s linear;
-  /* transition-delay: 0s; */
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ebebec;
 }
 .socialIcons img:hover {
   /* top: -10px; */
