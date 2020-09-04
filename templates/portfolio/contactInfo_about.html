@@ -64,27 +64,44 @@
         <a href="" class="close">x</a>
         <h2>About Me</h2>
         {% for detail in abouT %}
-        <p>
-            {{ detail.about }}
+
 
         <div class="social-list">
-            <ul>
-                <li><a href="https://github.com/Wangenye"><img src="{% static './images/github/github-original.svg' %}"
-                            alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/simon-mwangi-382a70173"><img
-                            src="{% static './images/Icons/linkedin-original.svg' %}" alt=""></a>
-                </li>
-                <li><a href=""><img src="{% static './images/Icons/instagram-213-675870.svg' %}" alt=""></a>
-                </li>
-                <li><a href="https://twitter.com/DeveloperSimo"><img
-                            src="{% static './images/Icons/twitter-236-675864.svg' %}" alt=""></a></li>
-                <li><a href="https://www.facebook.com/neal.wangenye"><img
-                            src="{% static './images/Icons/facebook-original.svg' %}" alt=""></a></li>
+            <div>
+                <ul>
+                    {%for link in social_links %}
+                    <li><a target="_blank" href="{{ link.github}}"><img
+                                src="{% static './images/github/github-original.svg' %}" alt=""></a></li>
+                    <li><a target="_blank" href="{{ link.linkedLn}}"><img
+                                src="{% static './images/Icons/linkedin-original.svg' %}" alt=""></a>
+                    </li>
+                    <li><a target="_blank" href=""><img src="{% static './images/Icons/instagram-213-675870.svg' %}"
+                                alt=""></a>
+                    </li>
+                    <li><a target="_blank" href="{{ link.twitter }}"><img
+                                src="{% static './images/Icons/twitter-236-675864.svg' %}" alt=""></a></li>
+                    <li><a target="_blank" href="{{ link.facebook }}"><img
+                                src="{% static './images/Icons/facebook-original.svg' %}" alt=""></a></li>
+                    {% endfor%}
+                </ul>
+            </div>
 
-            </ul>
+            <div class="downloadcv">
+
+                <a id="cvDownlod" href="{{ detail.cV.url}}" download>Download Cv</a>
+
+            </div><br>
+
         </div>
+        <p>
+
+            {{ detail.about }}
         </p>
-        {% endfor %}
+
+
+    </div>
+
+    {% endfor %}
     </div>
 
 

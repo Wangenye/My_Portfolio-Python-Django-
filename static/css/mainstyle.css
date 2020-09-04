@@ -369,29 +369,59 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transform: translateY(-20px);
   opacity: 0;
   transition: all 0.25s ease;
 }
 .Center .cards .pcard .caption h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.8rem;
   position: relative;
   top: 0;
-  color: #ebebec;
+  color: #ffedee;
   font-family: "ArimaMadurai-Black";
+  backdrop-filter: blur(10px);
 }
-.Center .cards .pcard .caption a {
-  height: 80px;
-  width: 80px;
+.Center .cards .pcard .caption #git_demolinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
 }
-.Center .cards .pcard .caption a img {
-  height: 60px;
-  width: 60px;
+.Center .cards .pcard .caption #git_demolinks a {
+  padding: 20px;
+  text-decoration: none;
+  margin: 20px;
+}
+.Center .cards .pcard .caption #git_demolinks #git_url {
+  position: relative;
+  display: flex;
+  float: left;
+  left: 0;
+  box-sizing: border-box;
+}
+.Center .cards .pcard .caption #git_demolinks #git_url img {
+  height: 40px;
+  width: 40px;
   background: #ebebec;
   border-radius: 50%;
-  padding: 20px;
+  padding: 10px;
+}
+.Center .cards .pcard .caption #git_demolinks a#demo_url {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: #3b3e4d;
+  color: #ffc25c;
+  text-decoration: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "ArimaMadurai-Black";
 }
 
 @media screen and (max-width: 780px) {

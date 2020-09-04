@@ -1,23 +1,55 @@
 html {
   scroll-behavior: smooth;
 }
-
-.btns {
-  display: inline-block;
-  position: absolute;
-  top: 300px;
-  left: 40%;
-  z-index: -1;
-  /* overflow: hidden; */
-}
 body {
   background-color: #252627;
+  /* width: ; */
 }
-.socialIcons {
+
+.btns {
+  width: 100%;
+  height: 100%;
+  display: flex;
   position: absolute;
-  animation-name: dudu;
-  /* background-color: wheat; */
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  z-index: -1;
 }
+/* .btns ul {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+} */
+.btns ul li {
+  /* top: -100px; */
+  /* right: 50%; */
+  /* left: -150px; */
+
+  cursor: pointer;
+  /* margin: 30px; */
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  padding: 30px;
+}
+
+.btns img {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  /* margin: 20px; */
+  /* background-color: black; */
+  padding: 50px;
+  /* right: 50%;
+  left: 50%;
+  transform: translateX(-50%); */
+  cursor: pointer;
+}
+
 #number {
   position: absolute;
   /* border: 2px red solid; */
@@ -44,9 +76,22 @@ body {
   justify-content: center;
   align-content: center;
 }
+.social-list {
+  left: -20px;
+  float: left;
+  display: flex;
+  position: relative;
+  width: 100%;
+  clear: both;
+  padding: 10px 0;
+  margin: 0px 10px;
+  /* background-color: yellow; */
+  margin-bottom: 20px;
+}
 .social-list ul {
   position: relative;
   display: inline;
+  left: 0;
 }
 .social-list ul li {
   border-radius: 50%;
@@ -58,11 +103,37 @@ body {
   text-decoration: none;
 }
 .social-list ul li a img {
-  padding: 10px;
+  padding: 12px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-color: #ebebec;
+  /* margin-bottom: 10px; */
+}
+.downloadcv {
+  position: relative;
+  /* display: flex; */
+  bottom: 0;
+  margin-right: 0;
+  right: 0;
+}
+.downloadcv a {
+  display: flex;
+  /* float: right; */
+
+  position: relative;
+  clear: both;
+  top: 10px;
+  /* shape-outside: circle(); */
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: #3b3e3d;
+  color: #ffc26c;
+  text-decoration: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "ArimaMadurai-Black";
 }
 .socialIcons img:hover {
   /* top: -10px; */
@@ -77,32 +148,7 @@ body {
   /* box-sizing: border-box; */
   box-shadow: 0 0 1.2rem rgba(4, 189, 164, 0.719);
 }
-.btns img {
-  height: 100px;
-  width: 100px;
-  background-color: aquamarine;
-  border-radius: 50%;
-  /* margin: 20px; */
-  /* background-color: black; */
-  padding: 50px;
-  right: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-}
 
-.btns ul li {
-  top: -100px;
-  right: 50%;
-  left: -150px;
-
-  cursor: pointer;
-  margin: 30px;
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
-  /* padding: 30px; */
-}
 .close {
   position: fixed;
   right: -0.5rem;
@@ -124,7 +170,7 @@ body {
 .contact {
   background-color: #fff;
   position: absolute;
-  width: 900px;
+  width: 1000px;
   /* height: 500px; */
   /*background-color: yellow*/
   left: 50%;
@@ -201,11 +247,13 @@ button {
   font-family: sans-serif;
 }
 .About {
+  float: none;
+  clear: both;
   background-color: #fff;
   overflow-y: scroll;
   display: none;
   position: absolute;
-  width: 900px;
+  width: 1000px;
   height: 400px;
   /*background-color: yellow*/
   left: 50%;
@@ -227,7 +275,7 @@ button {
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   word-spacing: 3px;
   padding: 10px;
@@ -250,41 +298,116 @@ button {
   }
 
   .btns {
-    margin: 0;
-    /* display: none; */
-    top: 70px;
+    width: 100%;
+    height: 100%;
+    display: block;
     position: absolute;
-    /* left: 50%; */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    z-index: -1;
   }
-  .btns img {
-    height: 80px;
-    width: 80px;
-    background-color: aquamarine;
-    border-radius: 50%;
-    /* margin: 20px; */
-    /* background-color: black; */
-    padding: 50px;
-    right: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
+
+  .btns ul {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* width: 100%;
+    height: 100%; */
+    /* right: 50%; */
   }
 
   .btns ul li {
-    top: 50px;
-    right: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    /* right: 50%;
-    left: 0px; */
-
     cursor: pointer;
-    margin: 20px 0px;
+    left: 0;
+    margin: 0;
+    /* margin: 30px; */
     position: relative;
     display: inline-block;
     list-style-type: none;
-    /* padding: 30px; */
+    padding: 30px;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
+
+  .btns img {
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    padding: 30px;
+    cursor: pointer;
+  }
+
+  .social-list {
+    left: -20px;
+    float: left;
+    display: block;
+    position: relative;
+    width: 100%;
+    clear: both;
+    padding: 10px 0;
+    margin: 0px 10px;
+    /* background-color: yellow; */
+    margin-bottom: 20px;
+  }
+  .social-list ul {
+    position: relative;
+    display: inline;
+    left: 0;
+  }
+  .social-list ul li {
+    border-radius: 50%;
+    display: inline;
+    list-style-type: none;
+    padding: 0px 5px;
+    clear: both;
+  }
+  .social-list ul li a {
+    text-decoration: none;
+  }
+  .social-list ul li a img {
+    padding: 8px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #ebebec;
+    /* margin-bottom: 10px; */
+  }
+  .downloadcv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin-right: 0;
+    right: 0;
+  }
+  .downloadcv a {
+    display: flex;
+    /* float: right; */
+
+    position: relative;
+    clear: both;
+    top: 10px;
+    /* shape-outside: circle(); */
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: #3b3e3d;
+    color: #ffc26c;
+    text-decoration: none;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "Akronim";
+  }
+
   .contact {
     background-color: #fff;
     position: absolute;

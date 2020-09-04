@@ -108,9 +108,13 @@
                                             <img src="{{ project.project_image.url }}" alt="">
                                             <div class="caption">
                                                 <h3>{{ project.name }}!</h3>
-                                                <a href=""><img src="{% static './images/github/github-original.svg' %}"
-                                                        alt=""></a>
-                                                <!-- <a href="">Demo</a> -->
+                                                <div id="git_demolinks">
+                                                    <a id="git_url" target="_blank" href="{{ project.git_url }}"><img
+                                                            src="{% static './images/github/github-original.svg' %}"
+                                                            alt=""></a>
+                                                    <a id="demo_url" target="_blank"
+                                                        href="{{  project.demo_url }}">Demo</a>
+                                                </div>
                                             </div>
                                         </div>
 

@@ -103,29 +103,65 @@
         z-index: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         transform: translateY(-20px);
         opacity: 0;
         transition: all 0.25s ease;
         h3 {
-          font-size: 1.8rem;
-          position: relative;
-          top: 0;
-          color: $defaultColor;
-          font-family: $defaultFont;
-        }
-        a {
-          // padding: 20px;
-          height: 80px;
-          width: 80px;
+          display: flex;
 
-          img {
-            height: 60px;
-            width: 60px;
-            background: $defaultColor;
-            border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.8rem;
+          position: $position1;
+          top: 0;
+          color: #ffedee;
+          font-family: $defaultFont;
+          backdrop-filter: blur(10px);
+        }
+        #git_demolinks {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+          position: $position1;
+          padding: 10px;
+          margin: 10px;
+          // backdrop-filter: blur(5px);
+          a {
             padding: 20px;
+            text-decoration: none;
+            margin: 20px;
+          }
+          #git_url {
+            position: $position1;
+            display: flex;
+            float: left;
+            left: 0;
+            box-sizing: border-box;
+            // padding: 20px;
+            // height: 50px;
+            // width: 50px;
+
+            img {
+              height: 40px;
+              width: 40px;
+              background: $defaultColor;
+              border-radius: 50%;
+              padding: 10px;
+            }
+          }
+          a#demo_url {
+            box-sizing: border-box;
+            padding: 10px 20px;
+            background-color: $hoverTextColor;
+            color: $otherColor;
+            text-decoration: none;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 5px;
+            font-size: 1.2rem;
+            font-family: $defaultFont;
           }
         }
       }
