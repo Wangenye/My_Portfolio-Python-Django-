@@ -803,7 +803,7 @@ body {
     top: 100px;
     width: 100%;
     height: 1000px;
-    backdrop-filter: grayscale(0.5) opacity(0.8) blur(400px);
+    background-color: #ebebec;
     transition: all 2s;
     transform: translateY(-2000px);
   }
