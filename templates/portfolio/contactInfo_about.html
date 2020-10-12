@@ -3,18 +3,22 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0, maximum-scale=1, scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simon Mwangi Portfolio" />
     <title>Contact form</title>
-    <link rel="stylesheet" href="./fontawesome-free-5.10.2-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/contactform.min.css' %}">
+<script charset="utf-8" type="text/javascript"   src="contactform.js"></script>
 </head>
 
-<!-- <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
-<link rel="stylesheet" type="text/css" href="{% static 'css/contactform.css' %}">
-<script src="contactform.js"></script>
 
 <body>
 
@@ -28,7 +32,6 @@
             </li>
             <li>
                 <img id="show" src="{% static './icons/icons8-envelope-96.png' %}" alt="">
-                <!-- <button id="show"> Show contact</button></li> -->
         </ul>
 
 
@@ -70,17 +73,17 @@
             <div>
                 <ul>
                     {%for link in social_links %}
-                    <li><a target="_blank" href="{{ link.github}}"><img
+                    <li><a rel="noreferrer" target="_blank" href="{{ link.github}}"><img
                                 src="{% static './images/github/github-original.svg' %}" alt=""></a></li>
-                    <li><a target="_blank" href="{{ link.linkedLn}}"><img
+                    <li><a rel="noreferrer" target="_blank" href="{{ link.linkedLn}}"><img
                                 src="{% static './images/Icons/linkedin-original.svg' %}" alt=""></a>
                     </li>
-                    <li><a target="_blank" href=""><img src="{% static './images/Icons/instagram-213-675870.svg' %}"
+                    <li><a rel="noreferrer" target="_blank" href=""><img src="{% static './images/Icons/instagram-213-675870.svg' %}"
                                 alt=""></a>
                     </li>
-                    <li><a target="_blank" href="{{ link.twitter }}"><img
+                    <li><a rel="noreferrer" target="_blank" href="{{ link.twitter }}"><img
                                 src="{% static './images/Icons/twitter-236-675864.svg' %}" alt=""></a></li>
-                    <li><a target="_blank" href="{{ link.facebook }}"><img
+                    <li><a rel="noreferrer" target="_blank" href="{{ link.facebook }}"><img
                                 src="{% static './images/Icons/facebook-original.svg' %}" alt=""></a></li>
                     {% endfor%}
                 </ul>
@@ -105,7 +108,8 @@
     </div>
 
 
-    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>
         $('#show').click(function () {
             $('#showcontact').show();
